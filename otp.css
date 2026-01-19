@@ -1,0 +1,193 @@
+  * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(75, 236, 50);
+            background-image: url(wp2737776.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .register {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 30vw;
+            height: 30vh;
+            text-align: center;
+            background-color: yellow;
+            color: rgb(18, 23, 82);
+            margin-top: 250px;
+            position: relative;
+        }
+
+        .register .sobl {
+            margin-top: -95px;
+        }
+
+        .sobl b {
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            width: calc(30vw);
+            height: 5vh;
+            align-items: center;
+            font-size: larger;
+            transition: 3s ease;
+            position: relative;
+        }
+
+        .sobl b:hover {
+            letter-spacing: 2px;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Black layer with 50% opacity */
+            z-index: 0;
+        }
+
+        .container {
+            z-index: 1;
+        }
+
+        .register input {
+            width: 25vw;
+            height: 3vh;
+            border-radius: 5px;
+            box-shadow: 2px 4px 2px rgb(79, 79, 13);
+            margin-top: 25px;
+            position: relative;
+        }
+
+        .register input:focus {
+            outline: 0;
+            border-color: blue;
+        }
+
+        .register .intro {
+            margin-top: 10px;
+        }
+
+        .register small {
+            margin-top: 15px;
+        }
+
+        .register p {
+            margin-top: 220px;
+            color: red;
+            position: absolute;
+        }
+
+        .register button {
+            background-color: black;
+            color: white;
+            width: 25vw;
+            margin-top: 120px;
+            height: 3vh;
+            position: absolute;
+        }
+
+        .register button:hover {
+            background-color: rgb(181, 6, 6);
+        }
+
+        .allregisters {
+            display: flex;
+        }
+
+        .two .intro .pop {
+            color: red;
+        }
+
+        .two input {
+            width: 1vw;
+            height: 2vh;
+            text-align:center;
+        }
+        .two input::-webkit-inner-spin-button,
+        .two input::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+              margin: 0px;
+        }
+
+        .two .sobl {
+            margin-top: -103px;
+        }
+
+       .two  .counters {
+            margin-top: 105px;
+            border: 2px solid black;
+            width: 3vw;
+            height: 2vh;
+            padding: 2px;
+            color: whitesmoke;
+            background-color: black;
+            text-shadow: -1px -1px 4px rgb(240, 248, 255);
+            position: absolute;
+            bottom: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flicker {
+            color: red !important;
+        }
+        .three .sobl{
+            margin-top: -177px;
+        }
+        .three img{
+            width: 125px;
+            position: absolute;
+            margin-top: 50px;
+        }
+        .continue.disable{
+            opacity : 0.7;
+            pointer-events: none;
+            user-select: none;
+        }
+        .verify.disable{
+            opacity : 0.7;
+            pointer-events: none;
+            user-select: none;
+        }
+        .err{
+            visibility: hidden;
+        }
+        .three .home{
+            width: 5vw;
+            height: 2vh;
+            margin-top: 225px;
+        }
+        .shake{
+            animation : shake 0.2s ease-in-out 1;  /*  we use ease - in -out here as we wnat to start buutton to shake instantly and then stop ex .. exit and entrance  */ 
+        }
+        @keyframes shake{
+            0% { 
+                margin-left: 0rem;; 
+            }
+           25%{
+            margin-left: 0.5rem;
+           }
+           50%{
+            margin-left: -0.5rem;
+           }100%{
+            margin-left: 0rem;
+           }
+        }
